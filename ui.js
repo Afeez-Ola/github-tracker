@@ -21,6 +21,8 @@ class UI {
                     <br>
                      <ul class="list-group">
                         <li class="list-group-item">Company: ${user.company}</li>
+                        <li class="list-group-item">Twitter: ${user.twitter_username}</li>
+                        <li class="list-group-item">Email: ${user.email}</li>
                         <li class="list-group-item">Website/Blog: ${user.blog}</li>
                         <li class="list-group-item">Location: ${user.location}</li>
                         <li class="list-group-item">Member Since: ${user.created_at}</li>
@@ -51,7 +53,7 @@ class UI {
                           <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
                           <span class="badge badge-success">Forks: ${repo.forks_count}</span>
                     </div>
-                </div>;
+                </div>
 
             </div>
                 `;

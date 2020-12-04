@@ -12,11 +12,12 @@ searchUser.addEventListener('keyup', e => {
                 if (data.profile.message === 'Not Found') {
                     // console.log('User not found');
 
-                    ui.showAlert('User not found', 'alert alert-danger')
+                    ui.showAlert('User not found', 'alert alert-danger');
                 } else {
                     // console.log(data);
                     ui.showProfile(data.profile);
-                    ui.showRepos(data.repos)
+                    ui.showRepos(data.repos);
+                    console.log('https://api.github.com/users/user');
                 }
             })
             .catch(err => console.log(err));
